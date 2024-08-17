@@ -9,6 +9,10 @@ app.listen(port, () => {
   console.log("Server running on port " + port);
 });
 
+app.get('/test', (req, res) => {
+  res.send("hello soldier");
+})
+
 // Define a route for the home page
 app.get("/", (req, res) => {
   res.send(`
